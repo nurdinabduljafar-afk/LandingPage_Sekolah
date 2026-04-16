@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Sekolah</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: black;
+      background-color: white;
+    }
+
+    .container {
+      width: 85%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #666;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: black;
+    }
+
+    .hero {
+      background-color: gray;
+      padding: 80px 20px;
+      border-radius: 20px;
+      text-align: center;
+      margin-bottom: 50px;
+      color:white;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0 50px;
+    }
+
+    .card {
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      transition: 0.3s;
+      background:gray;
+      color:white;
+    }
+
+    .card:hover {
+      background-color: white;
+      color:black;
+      border-color: black;
+      transform: translateY(-5px);
+    }
+    
+    .card h3{
+      margin-bottom: 10px;
+    }
+    
+    .card p{
+      font-size:14px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #000;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: black;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 0.9rem;
+      border-top: 1px solid black;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="logo">
+        <strong>SMKN 1</strong> BANJAR
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#jurusan">Program</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="beranda">
+      <h1>Selamat Datang</h1>
+      <p>Ini adalah website sederhana SMKN 1 Banjar.</p>
+      <a href="#tentang" class="btn">Pelajari Lebih Lanjut</a>
+    </section>
+
+    <section>
+      <h2>Selamat Datang di SMKN 1 Banjar</h2>
+      <p>SMKN 1 Banjar merupakan sekolah menengah kejuruan yang berfokus pada
+        pengembangan keterampilan, kreativitas, dan prestasi siswa.</p>
+    </section>
+
+    <section id="tentang">
+      <h2>Tentang Kami</h2>
+      <p>
+        SMKN 1 Banjar adalah sekolah menengah kejuruan negeri terkemuka di Kota Banjar,
+        Jawa Barat, yang berlokasi di Jl. KH Mustopa, Parung Lesang.
+        Sekolah ini memiliki akreditasi A dengan fokus pada tujuh kompetensi keahlian,
+        termasuk teknologi, bisnis, dan pariwisata.
+      </p>
+    </section>
+
+    <section id="jurusan">
+      <h2>Program Jurusan</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>AKL</h3>
+          <p>Akuntansi Keuangan dan Lembaga</p>
+        </div>
+
+        <div class="card">
+          <h3>PM</h3>
+          <p>Pemasaran</p>
+        </div>
+
+        <div class="card">
+          <h3>MPLB</h3>
+          <p>Manajemen Perkantoran dan Layanan Bisnis</p>
+        </div>
+
+        <div class="card">
+          <h3>BCF</h3>
+          <p>Broadcasting dan Perfilman</p>
+        </div>
+
+        <div class="card">
+          <h3>PPLG</h3>
+          <p>Pengembangan Perangkat Lunak dan Gim</p>
+        </div>
+
+        <div class="card">
+          <h3>TBS</h3>
+          <p>Tata Busana</p>
+        </div>
+
+        <div class="card">
+          <h3>DKV</h3>
+          <p>Desain Komunikasi Visual</p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <h3>Kontak Kami</h3>
+      <p>Email: smkn1banjar@gmail.com</p>
+      <p>Telp: (0265) 744860</p>
+      <p>@ 2026 SMKN 1 Banjar</p>
+    </footer>
+
+  </div>
+</body>
+</html>
